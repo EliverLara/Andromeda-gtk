@@ -986,9 +986,19 @@ StScrollBar {
 
 .message-content {
   padding: 10px; }
-  .message-content *:hover > StIcon,
-  .message-content *:focus > StIcon {
-    color: #ff007a; }
+
+.message-close-button {
+  color: #fefefe;
+  background-color: rgba(254, 254, 254, 0.2);
+  border-radius: 99px; }
+  .message-close-button:hover {
+    background-color: #ff007a; }
+    .message-close-button:hover > StIcon {
+      color: #fefefe; }
+  .message-close-button:active {
+    background-color: #ff007a; }
+    .message-close-button:active > StIcon {
+      color: #fefefe; }
 
 /* Media Controls */
 .message-media-control {
