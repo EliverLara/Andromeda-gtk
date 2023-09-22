@@ -50,7 +50,7 @@ StEntry {
   @include entry(normal);
   border-radius: 6px;
   padding: 4px;
-  border-width: 1px;
+  border-width: 2px;
   color: $fg_color;
   &:hover { @include entry(hover);}
   &:focus { @include entry(focus,$fc:transparentize($fg_color,0.5));}
@@ -1435,20 +1435,11 @@ $slider_size: 15px;
   .search-entry {
     width: 320px;
     padding: 9px;
-    border-radius: 8px;
-    border: 2px solid lighten($bg_color, 5%);
-    color: $fg_color;
-    background-color: lighten($bg_color, 5%);
-    box-shadow: $depth;
-
-
+    border-radius: 10px;
+    border-color: transparent;
+  
     .search-entry-icon { icon-size: 1em; padding: 0 4px; color: transparentize($fg_color,.3); }
-
-    &:hover, &:focus {
-      background-color: lighten($bg_color, 5%);
-      border-color: transparentize($selected_bg_color, 0.5);
-      .search-entry-icon { color: $fg_color; }
-    }
+  
   }
 
   //search results
