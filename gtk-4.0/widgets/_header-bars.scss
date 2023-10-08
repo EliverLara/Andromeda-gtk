@@ -113,23 +113,6 @@ headerbar {
       }
     }
 
-    //Reset style
-    &.titlebutton {
-      color: transparent;
-      box-shadow: none;
-      border: none;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      &:hover,
-      &:active,
-      &:checked,
-      &:backdrop,
-      &:backdrop:hover,* {
-        color: transparent;
-        box-shadow: none;
-        background-color: transparent;
-      }
-    }
   }
   %linked-header {
     border-radius: 0;
