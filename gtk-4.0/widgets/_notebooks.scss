@@ -209,7 +209,7 @@
       // colors the button like the label, overridden otherwise
       button.flat {
         &:hover {  
-          background: transparent;
+          background: red;
           box-shadow: none;
           color: $red; 
         }
@@ -311,6 +311,16 @@ tabbar {
 
     > tab,
     > tabboxchild > tab {
+      button.flat {
+        padding: 0;
+        margin: 4px;
+        min-width: 20px;
+        min-height: 20px;
+        border-radius: 10px;
+        &:hover {
+          background-color: lighten($base_color, 15%);
+        }
+      }
       &:checked, &:selected { background-color: $base_color; }
     }
   }
