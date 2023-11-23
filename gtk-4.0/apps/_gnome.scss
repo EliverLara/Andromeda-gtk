@@ -127,6 +127,8 @@
         margin: 0;
       }
     }
+    
+    > text { background-color: transparent; }
   
     > menubutton > button {
       min-width: 16px;
