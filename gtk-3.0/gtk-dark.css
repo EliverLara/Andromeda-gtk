@@ -6138,44 +6138,24 @@ ConversationListView {
   -gtk-icon-transform: scale(0.72); }
 
 /* path-bar of thunar */
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button {
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:hover, .thunar toolbar .path-bar-button:hover {
+  background-color: #2c2e39; }
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.toggle.path-bar-button:checked, .thunar toolbar .path-bar-button:checked {
   color: #d8dee9;
-  border-radius: 6px;
-  text-shadow: none;
-  box-shadow: none;
-  border: 1px solid #0b0c0f;
-  background-color: #1c1e24;
-  border-radius: 0;
-  border-right: 0.5px solid #0b0c0f;
-  box-shadow: none;
-  min-height: 20px;
-  padding: 3px 4px; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:first-child {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:last-child {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-    border-right-style: solid; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:only-child {
-    border-radius: 4px;
-    border-style: solid; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:hover {
-    color: #007DB8; }
-  window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .path-bar-button:checked {
-    color: #fff;
-    outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #007DB8;
-    text-shadow: none; }
-window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar .toggle.path-bar-button:hover {
-  color: #fff;
-  outline-color: rgba(255, 255, 255, 0.3);
-  background-color: #007DB8;
+  outline-color: rgba(216, 222, 233, 0.3);
+  background: linear-gradient(to right, #882ae9, #34eceb) left bottom #2c2e39 no-repeat;
+  background-size: 100% 1.5px;
   text-shadow: none; }
+
+window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button, .thunar toolbar .path-bar-button {
+  background: #1c1e24;
+  outline: none;
+  border: none;
+  box-shadow: none; }
 
 /* thunar sidepane */
 .thunar scrolledwindow.sidebar treeview.view {
-  background: #111317;
+  background: #16181d;
   padding: 1.5px; }
   .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
     background: rgba(0, 125, 184, 0.7);
