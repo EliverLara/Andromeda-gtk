@@ -1640,7 +1640,8 @@ spinbutton:not(.vertical), entry {
     border-radius: 0; }
   spinbutton:focus-within:not(.vertical),
   entry:focus-within {
-    border-color: #005a85; }
+    border-color: #005a85;
+    box-shadow: 0px 0px 1px 1px #007DB8 inset; }
   spinbutton:disabled:not(.vertical),
   entry:disabled {
     color: #797e86;
@@ -1669,7 +1670,8 @@ spinbutton:not(.vertical), entry {
     border-color: #330018; }
     spinbutton.error:focus-within:not(.vertical),
     entry.error:focus-within {
-      border-color: #330018; }
+      border-color: #330018;
+      box-shadow: 0px 0px 1px 1px #007DB8 inset; }
     spinbutton.error:selected:focus:not(.vertical), spinbutton.error:selected:not(.vertical),
     entry.error:selected:focus,
     entry.error:selected {
@@ -1683,7 +1685,8 @@ spinbutton:not(.vertical), entry {
     border-color: #1e1302; }
     spinbutton.warning:focus-within:not(.vertical),
     entry.warning:focus-within {
-      border-color: #1e1302; }
+      border-color: #1e1302;
+      box-shadow: 0px 0px 1px 1px #007DB8 inset; }
     spinbutton.warning:selected:focus:not(.vertical), spinbutton.warning:selected:not(.vertical),
     entry.warning:selected:focus,
     entry.warning:selected {
