@@ -6083,26 +6083,23 @@ ConversationListView {
   -NemoPlacesTreeView-disk-full-bg-color: #363d49;
   -NemoPlacesTreeView-disk-full-fg-color: #f3d56e;
   -GtkTreeView-vertical-separator: 10; }
-  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover,
-  .nemo-window .places-treeview iconview.cell:hover {
-    background: #252932; }
-  .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview .view.cell:hover, .nemo-window .places-treeview iconview.cell:hover, .nemo-window .places-treeview .view.cell:selected, .nemo-window .places-treeview iconview.cell:selected,
+  .nemo-window .places-treeview iconview.cell:hover,
   .nemo-window .places-treeview iconview.cell:selected {
-    background: #007DB8;
+    background: rgba(37, 41, 50, 0.93);
     color: #fff; }
 .nemo-window .sidebar {
   background-color: #16181d; }
   .nemo-window .sidebar .view, .nemo-window .sidebar iconview, .nemo-window .sidebar .iconview, .nemo-window .sidebar row {
-    color: #98abb2;
+    color: #d8dee9;
     background-color: transparent; }
 .nemo-window .nemo-window-pane widget.entry {
   background-clip: padding-box;
   min-height: 28px;
   padding: 5px;
   color: #d8dee9;
-  border: 1px solid #0b0c0f;
-  border-radius: 3px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.9), inset 1px 0 rgba(0, 0, 0, 0.96), inset -1px 0 rgba(0, 0, 0, 0.96), inset 0 -1px rgba(0, 0, 0, 0.98), 0 1px rgba(255, 255, 255, 0.6); }
+  border: 1px solid #007DB8;
+  border-radius: 3px; }
   .nemo-window .nemo-window-pane widget.entry:selected {
     background-color: #007DB8;
     color: #fff; }
@@ -6125,13 +6122,9 @@ ConversationListView {
     .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
-      background-color: #007DB8;
+      background: linear-gradient(to right, #882ae9, #34eceb) left bottom #2c2e39 no-repeat;
+      background-size: 100% 1.5px;
       text-shadow: none; }
-      .nemo-window toolbar.primary-toolbar button:selected:backdrop, .nemo-window toolbar.primary-toolbar button:active:backdrop, .nemo-window toolbar.primary-toolbar button:checked:backdrop {
-        color: rgba(255, 255, 255, 0.5);
-        background-color: rgba(0, 125, 184, 0.6);
-        text-shadow: none;
-        box-shadow: none; }
     .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
       color: rgba(216, 222, 233, 0.2);
       background-color: #16181d;
