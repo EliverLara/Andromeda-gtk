@@ -17,16 +17,19 @@ stage {
 /* WIDGETS */
 
 /* Buttons */
-.button, %button {
+.button, .icon-button, %button {
   @include button(normal);
-  border-radius: 6px;
-  padding: 5px 32px;
   &:focus { @include button(focus); }
   &:insensitive { @include button(insensitive); }
   &:active { @include button(active); }
   &:hover {
     @include button(hover);
   }
+}
+
+.button {
+  border-radius: 6px;
+  padding: 5px 32px;
 }
 
 .modal-dialog-linked-button {
@@ -689,6 +692,7 @@ $slider_size: 15px;
   .switcher-list .item-box {
     padding: 8px;
     border-radius: 10px;
+    background-color: transparent;
   }
 
   .switcher-list .item-box:outlined {
@@ -993,6 +997,7 @@ $slider_size: 15px;
     }
 
     .calendar-month-label {
+      background-color: transparent;
       color: darken($fg_color,5%);
       font-weight: bold;
       padding: 8px 0;
@@ -1030,6 +1035,7 @@ $slider_size: 15px;
       margin: 2px;
       border-radius: 99px;
       color: $fg_color;
+      background-color: transparent;
       &:hover, &:focus { 
         background-color: lighten($bg_color, 10%); 
         box-shadow: none !important;
@@ -1040,11 +1046,13 @@ $slider_size: 15px;
         border-color: transparent; //avoid jumparound due to today
         box-shadow: none !important;
       }
-      &.calendar-day-heading {  //day of week heading
-        color: darken($fg_color, 10%);
-        margin-top: 1em;
-        font-size: 70%;
-      }
+    }
+
+    .calendar-day-heading {  //day of week heading
+      background-color: transparent;
+      color: darken($fg_color, 10%);
+      margin-top: 1em;
+      font-size: 70%;
     }
       .calendar-day { //border collapse hack - see calendar.js
         border-width: 0;
@@ -1445,6 +1453,7 @@ $slider_size: 15px;
   //search results
 
   %search-section-content-item {  
+    background-color: transparent;
     &:focus,
     &:hover,
     &:selected {
@@ -1554,8 +1563,10 @@ $slider_size: 15px;
   .app-well-app,
   .app-well-app.app-folder,
   .show-apps,
-  .grid-search-result {
-    
+  .grid-search-result,
+  .overview-tile,
+  .dash-item-container .overview-tile {
+    background-color: transparent;
     border: none;
     & .overview-icon {
       @extend %icon_tile;
@@ -1579,7 +1590,7 @@ $slider_size: 15px;
 
   }
 
-  .app-well-app-running-dot { //running apps indicator
+  .app-well-app-running-dot, .app-grid-running-dot { //running apps indicator
     width: 4px; height: 4px;
     background-color: $selected_bg_color;
     border-radius: 10px !important;
@@ -1588,6 +1599,7 @@ $slider_size: 15px;
   }
 
   %icon_tile {
+    background-color: transparent;
     color: $selected_fg_color;
     padding: 6px;
     border: none;
@@ -1598,7 +1610,7 @@ $slider_size: 15px;
   }
 
 /* App Folders */
-.app-well-app.app-folder {
+.app-well-app.app-folder, .app-folder .overview-icon {
   background-color:  lighten($base_color, 7%);
   border-radius: 12px;
 }
@@ -1695,17 +1707,16 @@ $slider_size: 15px;
   }
   
   .page-navigation-arrow {
-    &  > StIcon {
-      margin: 6px;
-      padding: 18px;
-      width: 24px;
-      height: 24px;
-      border-radius: 99px;
-    }
+    background-color: transparent;
+    margin: 6px;
+    padding: 18px;
+    width: 24px;
+    height: 24px;
+    border-radius: 99px;
   
-    &:insensitive > StIcon { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
-    &:hover > StIcon { background-color: transparentize($selected_bg_color, 0.5);}
-    &:active > StIcon {background-color: $selected_bg_color;}
+    &:insensitive { @include button(undecorated, $osd_fg_color, transparentize($osd_bg_color, 0.5));}
+    &:hover { background-color: transparentize($selected_bg_color, 0.5);}
+    &:active {background-color: $selected_bg_color;}
   }
   
 
