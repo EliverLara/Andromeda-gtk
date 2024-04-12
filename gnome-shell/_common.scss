@@ -1527,6 +1527,13 @@ $slider_size: 15px;
     -x-offset: 8px;
   }
 
+  #dash {
+    // Running app indicator (also shown in app grid)
+    .app-well-app-running-dot, .app-grid-running-dot  {
+      margin-bottom: 14px; // hardcoded
+    }
+  }
+  
   /* App Vault/Grid */
   .icon-grid {
     spacing: 30px;
@@ -1611,7 +1618,7 @@ $slider_size: 15px;
 
 /* App Folders */
 .app-well-app.app-folder, .app-folder .overview-icon {
-  background-color:  lighten($base_color, 7%);
+  background-color:  lighten($base_color, 5%);
   border-radius: 12px;
 }
 // expanded folder
