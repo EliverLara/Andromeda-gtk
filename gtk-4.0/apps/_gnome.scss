@@ -102,8 +102,9 @@
       }
 
       image { 
-        background-color: lighten($_sidebar_color, 7%);
-        border-bottom: 2px solid #882ae9; 
+        background-color: lighten($headerbar_color, 12%);
+       // border-bottom: 2px solid #882ae9; 
+        box-shadow: 0px -2px inset #882ae9;
       }
     }
 
