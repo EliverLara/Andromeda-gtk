@@ -2,7 +2,6 @@
  * Expanders *
  *************/
 expander {
-  arrow {
     min-width: 16px;
     min-height: 16px;
     -gtk-icon-source: -gtk-icontheme('pan-end-symbolic');
@@ -12,5 +11,4 @@ expander {
     &:hover { color: lighten($fg_color,30%); } //only lightens the arrow
 
     &:checked { -gtk-icon-source: -gtk-icontheme('pan-down-symbolic'); }
-  }
 }
