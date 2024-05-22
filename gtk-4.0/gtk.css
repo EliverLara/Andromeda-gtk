@@ -635,15 +635,10 @@ button.suggested-action {
     color: white;
     border-radius: 6px;
     background: #00cfb0; }
-  button.suggested-action:hover {
+  button.suggested-action:hover, button.suggested-action:active, button.suggested-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #00cfb0;
-    text-shadow: none; }
-  button.suggested-action:active, button.suggested-action:checked {
-    color: white;
-    outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #007DB8;
+    background-color: #00e3c2;
     text-shadow: none; }
   button.suggested-action:backdrop, button.suggested-action.flat:backdrop {
     color: rgba(255, 255, 255, 0.4);
@@ -742,15 +737,10 @@ button.destructive-action {
     color: white;
     border-radius: 6px;
     background: #00cfb0; }
-  button.destructive-action:hover {
+  button.destructive-action:hover, button.destructive-action:active, button.destructive-action:checked {
     color: white;
     outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #cc0062;
-    text-shadow: none; }
-  button.destructive-action:active, button.destructive-action:checked {
-    color: white;
-    outline-color: rgba(255, 255, 255, 0.3);
-    background-color: #007DB8;
+    background-color: #e0006b;
     text-shadow: none; }
   button.destructive-action:backdrop, button.destructive-action.flat:backdrop {
     color: rgba(255, 255, 255, 0.4);
@@ -2232,17 +2222,13 @@ GraniteWidgetsWelcome {
       border-radius: 6px;
       background: #00cfb0;
       box-shadow: none; }
-      .titlebar button.suggested-action:hover,
-      headerbar button.suggested-action:hover {
+      .titlebar button.suggested-action:hover, .titlebar button.suggested-action:active, .titlebar button.suggested-action:checked,
+      headerbar button.suggested-action:hover,
+      headerbar button.suggested-action:active,
+      headerbar button.suggested-action:checked {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #00b096;
-        text-shadow: none; }
-      .titlebar button.suggested-action:active,
-      headerbar button.suggested-action:active {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #007DB8;
+        background-color: #00e3c2;
         text-shadow: none; }
       .titlebar button.suggested-action:disabled,
       headerbar button.suggested-action:disabled {
@@ -2278,17 +2264,13 @@ GraniteWidgetsWelcome {
       border-radius: 6px;
       background: #00cfb0;
       box-shadow: none; }
-      .titlebar button.destructive-action:hover,
-      headerbar button.destructive-action:hover {
+      .titlebar button.destructive-action:hover, .titlebar button.destructive-action:active, .titlebar button.destructive-action:checked,
+      headerbar button.destructive-action:hover,
+      headerbar button.destructive-action:active,
+      headerbar button.destructive-action:checked {
         color: white;
         outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #ad0053;
-        text-shadow: none; }
-      .titlebar button.destructive-action:active,
-      headerbar button.destructive-action:active {
-        color: white;
-        outline-color: rgba(255, 255, 255, 0.3);
-        background-color: #007DB8;
+        background-color: #e0006b;
         text-shadow: none; }
       .titlebar button.destructive-action:disabled,
       headerbar button.destructive-action:disabled {
