@@ -94,9 +94,9 @@ headerbar {
         @include button(rounded, $b_color, white);
         box-shadow: none;
 
-        &:hover { @include button(hover, darken($b_color, 6%), white); }
-
-        &:active { @include button(active, $b_color, white); }
+        &:hover,
+        &:active,
+        &:checked { @include button(hover, lighten($b_color, 4%), white); }
 
         &:disabled {
           @include button(insensitive, $b_color, white);
