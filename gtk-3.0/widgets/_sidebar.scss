@@ -34,7 +34,7 @@
     padding: 8px 12px;
     transition: all .12s ease-in;
     label{
-      color: #98abb2;
+      color: $fg_color;
     }
     &:selected{
       color: $selected_fg_color;
@@ -129,7 +129,7 @@ placessidebar{
 						margin-right: 7px;
 						padding-left: 14px;
 						padding-right: 7px;
-						color: #98abb2;
+						color: $fg_color;
 					}
 				}
 
@@ -139,10 +139,10 @@ placessidebar{
 				}
 
 				&:selected {
-          border-left: 2px solid #79B4B7;
+          border-left: 2px solid $selected_bg_color;
           &, & label { color: $selected_fg_color; }
           &, &:backdrop {
-            background:linear-gradient(to right,#79B4B7, #8CA1A5,
+            background:linear-gradient(to right, $selected_bg_color, $selected_bg_color,
             lighten($_sidebar_color, 7%) 40px,  lighten($_sidebar_color, 7%) 97%);
           }
 			
