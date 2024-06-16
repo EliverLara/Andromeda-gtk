@@ -219,9 +219,20 @@ headerbar {
     }
 
     .current-dir  {
-      label { padding: 3px 12px; }
+      label { 
+        @include button(active-header); 
+        padding: 3px 12px; 
+      }
 
-      label, image { @include button(active-header); }
+      image { 
+        background:
+        linear-gradient(to  right, #882ae9)
+        left 
+        bottom
+        lighten($headerbar_color, 12%)
+        no-repeat; 
+        background-size: 100% 1.5px;
+      }
     }
 
     button.current-dir:only-child {
