@@ -34,15 +34,13 @@
     border-radius: 0;
     border: none;
     background-color: transparentize($panel_bg_color, 1);
-
+    transition: none;
     &:hover {
       border: none;
       background-color: lighten($panel_bg_color, 10%);
     }
     &:active, &:checked {
-      color: $selected_fg_color;
-      border: none;
-      background-color: $selected_bg_color;
+      @include button(active-header, $border_size: 3px);
 
       label, image { color: inherit; }
     }
