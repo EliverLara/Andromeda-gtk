@@ -182,7 +182,7 @@
   }
 }
 
-@mixin button($t, $c:$base_color, $tc:$text_color, $edge: none) {
+@mixin button($t, $c:$base_color, $tc:$text_color, $edge: none, $border_size: 1.5px) {
 //
 // Button drawing function
 //
@@ -295,7 +295,7 @@
   bottom
   lighten($headerbar_color, 12%)
   no-repeat; 
-  background-size: 100% 1.5px;
+  background-size: 100% $border_size;
   text-shadow: none;
  // @include _shadows(inset 0px 1px 0px 0px $top_highlight,inset 0px -1px 0px 0px $bottom_highlight);
 }

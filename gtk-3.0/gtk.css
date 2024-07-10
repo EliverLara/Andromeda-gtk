@@ -5736,14 +5736,17 @@ radiobutton.color-button:active > radio {
   color: #d8dee9;
   border-radius: 0;
   border: none;
-  background-color: rgba(22, 24, 29, 0); }
+  background-color: rgba(22, 24, 29, 0);
+  transition: none; }
   .xfce4-panel.panel button.flat:hover:not(.open_group) {
     border: none;
     background-color: #2b303a; }
   .xfce4-panel.panel button.flat:active:not(.open_group), .xfce4-panel.panel button.flat:checked:not(.open_group) {
-    color: #fff;
-    border: none;
-    background-color: #007DB8; }
+    color: #d8dee9;
+    outline-color: rgba(216, 222, 233, 0.3);
+    background: linear-gradient(to right, #882ae9, #34eceb) left bottom #2c2e39 no-repeat;
+    background-size: 100% 3px;
+    text-shadow: none; }
     .xfce4-panel.panel button.flat:active:not(.open_group) label, .xfce4-panel.panel button.flat:active:not(.open_group) image, .xfce4-panel.panel button.flat:checked:not(.open_group) label, .xfce4-panel.panel button.flat:checked:not(.open_group) image {
       color: inherit; }
 
