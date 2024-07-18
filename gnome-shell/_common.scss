@@ -1182,7 +1182,7 @@ $slider_size: 16px;
 
   // colors are lightened since the media controls are in a card
   &:hover {
-    background-color: lighten($bg_color, 8%);
+    background-color: lighten($bg_color, 18%);
     color: $selected_fg_color;
   }
 
