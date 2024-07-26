@@ -2288,7 +2288,8 @@ $base_padding: 6px;
 
   &:checked { 
     @include button(active, lighten($bg_color, 12%));
-    color: $selected_fg_color;
+    &:hover { @include button(active, lighten($bg_color, 17%)); }
+    &, &:hover { color: $selected_fg_color; }
   }
 
   &, &:hover, &:checked { border: none; }
@@ -2327,7 +2328,11 @@ $base_padding: 6px;
     padding: $base_padding $base_padding*1.75;
     border-width: 0;
     &:checked { 
-      @include button(active, lighten($base_color, 3%));
+      @include button(active, lighten($base_color, 10%));
+      &:hover { @include button(active, lighten($bg_color, 15%)); }
+    }
+    &:hover { @include button(active, lighten($bg_color, 7%)); }
+    &:checked, &:hover, &:checked:hover {
       color: $selected_fg_color;
       border-width: 0;
     }
