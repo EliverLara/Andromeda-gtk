@@ -208,8 +208,8 @@
 
       // colors the button like the label, overridden otherwise
       button.flat {
-        &:hover {  
-          background: red;
+        &:hover { 
+          background-color: lighten($base_color, 15%); 
           box-shadow: none;
           color: $red; 
         }
@@ -220,7 +220,7 @@
           color: gtkalpha(currentColor, 0.3); 
         }
 
-        padding: 0;
+        padding: 2px;
         margin-top: 4px;
         margin-bottom: 4px;
         // FIXME: generalize .small-button?
