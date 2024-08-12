@@ -2996,13 +2996,13 @@ notebook > header {
         border-color: #0d0e11;
         background-color: #252831; }
     notebook > header tab button.flat {
-      padding: 0;
+      padding: 2px;
       margin-top: 4px;
       margin-bottom: 4px;
       min-width: 20px;
       min-height: 20px; }
       notebook > header tab button.flat:hover {
-        background: red;
+        background-color: #444a59;
         box-shadow: none;
         color: #ff007a; }
       notebook > header tab button.flat, notebook > header tab button.flat:backdrop {
