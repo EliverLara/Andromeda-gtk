@@ -15,7 +15,7 @@ stage {
   .button:focus, .icon-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     color: #fefefe;
     background-color: #2b303a;
-    box-shadow: none; }
+    box-shadow: none !important; }
   .button:insensitive, .icon-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #8c8e91;
     background-color: rgba(51, 53, 59, 0.66);
@@ -23,14 +23,14 @@ stage {
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:active, .icon-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active {
-    color: #00a9f5;
-    background-color: rgba(26, 29, 35, 0.95);
-    text-shadow: none;
-    icon-shadow: none; }
   .button:hover, .icon-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     color: #fefefe;
     background-color: #2b303a; }
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+    color: #fefefe;
+    background-color: #343a46;
+    text-shadow: none;
+    icon-shadow: none; }
 
 .button {
   border-radius: 6px;
@@ -49,18 +49,18 @@ stage {
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:active {
-    color: #00a9f5;
-    background-color: rgba(26, 29, 35, 0.95);
+    color: #fefefe;
+    background-color: #343a46;
     text-shadow: none;
     icon-shadow: none; }
   .modal-dialog-linked-button:focus {
     color: #fefefe;
     background-color: #2b303a;
-    box-shadow: none; }
+    box-shadow: none !important; }
     .modal-dialog-linked-button:focus:hover {
       color: #fefefe;
       background-color: #2b303a;
-      box-shadow: none; }
+      box-shadow: none !important; }
   .modal-dialog-linked-button:hover {
     color: #fefefe;
     background-color: #2b303a; }
@@ -1324,8 +1324,8 @@ StScrollBar {
 .app-view-control {
   padding: 4px 32px; }
   .app-view-control:checked {
-    color: #00a9f5;
-    background-color: rgba(26, 29, 35, 0.95);
+    color: #fefefe;
+    background-color: #343a46;
     text-shadow: none;
     icon-shadow: none; }
   .app-view-control:first-child {
@@ -1673,13 +1673,13 @@ StScrollBar {
   .keyboard-key:focus {
     color: #fefefe;
     background-color: #2b303a;
-    box-shadow: none; }
+    box-shadow: none !important; }
   .keyboard-key:hover, .keyboard-key:checked {
     color: #fefefe;
     background-color: #2b303a; }
   .keyboard-key:active {
-    color: #00a9f5;
-    background-color: rgba(26, 29, 35, 0.95);
+    color: #fefefe;
+    background-color: #343a46;
     text-shadow: none;
     icon-shadow: none; }
   .keyboard-key:grayed {
@@ -1694,7 +1694,7 @@ StScrollBar {
       color: #fefefe;
       background-color: #2b303a; }
     .keyboard-key.default-key:active {
-      color: #00a9f5;
+      color: #fefefe;
       background-color: #1E252C;
       text-shadow: none;
       icon-shadow: none; }
@@ -1785,7 +1785,7 @@ StScrollBar {
         color: #fefefe;
         background-color: #2b303a; }
       .login-dialog .modal-dialog-button:default:active {
-        color: #00a9f5;
+        color: #fefefe;
         background-color: #00a9f5;
         text-shadow: none;
         icon-shadow: none; }
@@ -2047,12 +2047,12 @@ StScrollBar {
   /* Move padding into the box; this is to allow menu arrows
      to extend to the border */ }
   .quick-toggle:checked {
-    color: #00a9f5;
+    color: #fefefe;
     background-color: #343a46;
     text-shadow: none;
     icon-shadow: none; }
     .quick-toggle:checked:hover {
-      color: #00a9f5;
+      color: #fefefe;
       background-color: #3f4655;
       text-shadow: none;
       icon-shadow: none; }
@@ -2093,17 +2093,17 @@ StScrollBar {
   padding: 6px 10.5px;
   border-width: 0; }
   .quick-menu-toggle .quick-toggle-arrow:checked {
-    color: #00a9f5;
+    color: #fefefe;
     background-color: #333f4a;
     text-shadow: none;
     icon-shadow: none; }
     .quick-menu-toggle .quick-toggle-arrow:checked:hover {
-      color: #00a9f5;
+      color: #fefefe;
       background-color: #3b414f;
       text-shadow: none;
       icon-shadow: none; }
   .quick-menu-toggle .quick-toggle-arrow:hover {
-    color: #00a9f5;
+    color: #fefefe;
     background-color: #292e37;
     text-shadow: none;
     icon-shadow: none; }
