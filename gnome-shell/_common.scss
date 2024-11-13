@@ -181,10 +181,20 @@ $slider_size: 15px;
   padding: 0 !important;
 
   .modal-dialog-content-box {
-    margin: 32px 40px;
+    margin: 20px 40px;
     spacing: 32px;
     max-width: 28em;
   }
+
+  .modal-dialog-button-box {
+    padding-top: 0;
+    .modal-dialog-button {
+      @extend %button;
+      border-radius: 12px;
+      margin: 5px;
+    }
+  }
+
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -241,7 +251,8 @@ $slider_size: 15px;
 /* End Session Dialog */
 .end-session-dialog {
   border: none;
-  & .modal-dialog-linked-button:last-child {
+  & .modal-dialog-linked-button:last-child,
+  & .modal-dialog-button:last-child {
     @include gradient();
     color: #fff;
     &:hover, &:focus {
