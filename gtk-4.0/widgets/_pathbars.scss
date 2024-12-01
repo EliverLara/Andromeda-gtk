@@ -90,21 +90,20 @@
 
 // search entry
 #NautilusQueryEditor { 
-  margin-top: 6px;
-  #NautilusQueryEditorTag {
-    > button {
-      margin: 0;
-    }
-  }
+  
+  // #NautilusQueryEditorTag {
+  //   > button {
+  //     margin: 0;
+  //   }
+  // }
   
   > text { background-color: transparent; }
 
   > menubutton > button {
-    min-width: 16px;
-    min-height: 16px;
+    @include button(undecorated);
     margin: 0;
     -gtk-icon-size: 12px;
-    padding: 0 4px;
+    padding: 0 2px;
     &:hover, &:active, &:checked {
       image { color: $selected_fg_color; }
     }

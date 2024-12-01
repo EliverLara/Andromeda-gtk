@@ -3,15 +3,13 @@
  ***************/
 %titlebar,
 headerbar {
-  padding: 0 13px;
-  min-height: 34px;
+  padding: 0 6px;
+  min-height: 38px;
   background: $headerbar_color;
   color: $headerbar_fg_color;
   border-radius: 0;
   &:backdrop {
     border-color: $backdrop_borders_color;
-   // background-image: none;
-
     transition: $backdrop_transition;
   }
 
@@ -33,110 +31,12 @@ headerbar {
   
   button {
     @include button(normal-header);
-    min-height: 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    box-shadow: none;
-    &.image-button{
-       padding: 3px 4px;
-    }
-    &.suggested-action{
-      box-shadow: none;
-      border: none;
-      background-color: $suggested_bg_color;
-        &:disabled, &:disabled:backdrop, &:backdrop {
-          border: none;
-          background-color: $suggested_bg_color;
-          &:hover,
-          &:active,
-          &:checked {
-            border: none;
-            background-color: $suggested_bg_color;
-          }
-        }
-        
-      }
-      
-    &.appmenu{
-      background: transparent;
-      &:backdrop{background: transparent;}
-    }
-    &:hover {
-      @include button(hover-header, $selected_bg_color, #fff);
-    }
-    &:active,
-    &:checked {
-      @include button(active, transparentize($selected_bg_color, 0.3), #fff);
-    }
-
-    &:backdrop,
-    &:disabled,
-    &:backdrop:disabled {
-      @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
-    }
-
-    &:backdrop {
-      &:hover,
-      &:active,
-      &:checked {
-        @include button(backdrop-header, $backdrop_selected_bg_color, $selected_bg_color);
-      }
-    }
-
-    @each $b_type, $b_color in (suggested-action, $cyan),
-                               (destructive-action, $destructive_color) {
-      &.#{$b_type} {
-        font-weight: bold;
-        min-height: 14px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-        border-radius: 6px;
-        @include button(rounded, $b_color, white);
-        box-shadow: none;
-
-        &:hover,
-        &:active,
-        &:checked { @include button(hover, lighten($b_color, 4%), white); }
-
-        &:disabled {
-          @include button(insensitive, $b_color, white);
-          label {color: transparentize(white,0.5);}
-        }
-
-        &:backdrop {
-          @include button(backdrop, $b_color, white);
-          border-radius: 3px;
-        }
-
-        &:backdrop:disabled { @include button(backdrop-insensitive, $b_color, white); }
-
-      }
-    }
-
-    //Reset style
-    &.titlebutton {
-      color: transparent;
-      box-shadow: none;
-      border: none;
-      background-color: transparent;
-      background-repeat: no-repeat;
-      &:hover,
-      &:active,
-      &:checked,
-      &:backdrop,
-      &:backdrop:hover,* {
-        color: transparent;
-        box-shadow: none;
-        background-color: transparent;
-      }
-    }
+    &:hover { @include button(hover-header, $selected_bg_color, $selected_fg_color);}
   }
   %linked-header {
     border-radius: 0;
     border-right-style: none;
     box-shadow: none;
-    margin: 5px 0px;
-    min-height: 20px;
     &:first-child {
       border-top-left-radius: 6px;
       border-bottom-left-radius: 6px;
@@ -253,8 +153,7 @@ headerbar {
   menubutton > button,
   spinbutton > button,
   splitbutton > button,
-  splitbutton > menubutton,
-  entry > menubutton {
+  splitbutton > menubutton{
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -307,12 +206,5 @@ headerbar {
     &, headerbar {
       background-color: $headerbar_color;
     }
-  }
-}
-
-.nautilus-window, #NautilusFileChooser {
-  .sidebar-pane .top-bar headerbar {
-    padding-top: 2px;
-    padding-bottom: 2px;
   }
 }
