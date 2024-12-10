@@ -8,25 +8,25 @@ stage {
 
 /* WIDGETS */
 /* Buttons */
-.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
+.button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .notification-banner .notification-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
   color: #fefefe;
   background-color: #23272f;
   box-shadow: none; }
-  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
+  .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .notification-banner .notification-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
     color: #fefefe;
     background-color: #2b303a;
     box-shadow: none !important; }
-  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
+  .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .notification-banner .notification-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
     color: #8c8e91;
     background-color: rgba(51, 53, 59, 0.66);
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
-  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
+  .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .notification-banner .notification-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
     color: #fefefe;
     background-color: #2b303a; }
-  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
+  .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .notification-banner .notification-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .notification-banner .notification-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
     color: #fefefe;
     background-color: #343a46;
     text-shadow: none;
@@ -1529,8 +1529,7 @@ StScrollBar {
   border: 1px solid #090a0c;
   box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.342); }
   .notification-banner:hover, .notification-banner:focus {
-    background-color: #23272f;
-    box-shadow: none;
+    background-color: #1e2229;
     border-radius: 12px; }
   .notification-banner * {
     color: #fefefe; }
@@ -1547,18 +1546,14 @@ StScrollBar {
     spacing: 1px;
     border-radius: 0px 0px 12px 12px; }
   .notification-banner .notification-button {
-    padding: 7px;
-    background-color: #1A1D23;
-    box-shadow: none;
-    border: none; }
+    padding: 7px; }
     .notification-banner .notification-button:first-child {
       border-radius: 0 0 0 12px; }
     .notification-banner .notification-button:last-child {
       border-radius: 0 0 12px 0; }
-    .notification-banner .notification-button:hover, .notification-banner .notification-buttonfocus {
-      color: #fefefe;
-      background-color: #2b303a;
-      border: none; }
+
+.notification-buttons-bin .notification-button {
+  border-radius: 10px !important; }
 
 .summary-source-counter {
   font-size: 10pt;
