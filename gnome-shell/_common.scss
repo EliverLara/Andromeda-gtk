@@ -193,7 +193,7 @@ $slider_size: 15px;
       border-radius: 10px;
     }
   }
-  
+
   .run-dialog-entry {
     width: 20em;
     margin-bottom: 6px;
@@ -1761,8 +1761,7 @@ $slider_size: 15px;
     border: 1px solid $borders_color;
     box-shadow: 0 2px 4px 2px rgba(0, 0, 0, 0.342);
     &:hover, &:focus { 
-      background-color: lighten($bg_color, 4%); 
-      box-shadow: none;
+      background-color: lighten($bg_color, 2%); 
       border-radius: 12px;
     }
     *{ color: #fefefe; }
@@ -1778,17 +1777,16 @@ $slider_size: 15px;
     }
     .notification-button {
       padding: 7px;
-      background-color: $bg_color;
-      box-shadow: none;
-      border: none;
+      @extend %button;
       &:first-child { border-radius: 0 0 0 12px; }
       &:last-child { border-radius: 0 0 12px 0; }
-      &:hover, &focus { 
-        @include button(hover);
-        border: none;
-      }
     }
   }
+
+  .notification-buttons-bin .notification-button {
+    border-radius: 10px !important;
+  }
+
   .summary-source-counter {
     font-size: 10pt;
     font-weight: bold;
