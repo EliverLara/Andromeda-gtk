@@ -2232,7 +2232,6 @@ GraniteWidgetsWelcome {
   .titlebar button,
   headerbar button {
     color: #d8dee9;
-    border-radius: 6px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #0b0c0f;
@@ -2509,7 +2508,6 @@ GraniteWidgetsWelcome {
     margin-top: 5px;
     margin-bottom: 5px;
     color: #d8dee9;
-    border-radius: 6px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #0b0c0f;
@@ -6097,26 +6095,26 @@ ConversationListView {
 .nemo-window toolbar.primary-toolbar {
   margin-bottom: -1px;
   background: #111216; }
-  .nemo-window toolbar.primary-toolbar button {
+  .nemo-window toolbar.primary-toolbar .path-bar button {
     color: #d8dee9;
-    border-radius: 6px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #0b0c0f;
     background-color: #1c1e24;
     min-height: 24px;
-    padding: 3px; }
-    .nemo-window toolbar.primary-toolbar button:hover {
+    padding: 3px;
+    margin-right: -1px; }
+    .nemo-window toolbar.primary-toolbar .path-bar button:hover {
       color: #fff;
       text-shadow: none;
-      background-color: rgba(0, 125, 184, 0.7); }
-    .nemo-window toolbar.primary-toolbar button:selected, .nemo-window toolbar.primary-toolbar button:active, .nemo-window toolbar.primary-toolbar button:checked {
+      background-color: rgba(44, 46, 57, 0.7); }
+    .nemo-window toolbar.primary-toolbar .path-bar button:selected, .nemo-window toolbar.primary-toolbar .path-bar button:active, .nemo-window toolbar.primary-toolbar .path-bar button:checked {
       color: #fff;
       outline-color: rgba(255, 255, 255, 0.3);
       background: linear-gradient(to right, #882ae9, #34eceb) left bottom #2c2e39 no-repeat;
       background-size: 100% 1.5px;
       text-shadow: none; }
-    .nemo-window toolbar.primary-toolbar button:backdrop, .nemo-window toolbar.primary-toolbar button:disabled, .nemo-window toolbar.primary-toolbar button:backdrop:disabled {
+    .nemo-window toolbar.primary-toolbar .path-bar button:backdrop, .nemo-window toolbar.primary-toolbar .path-bar button:disabled, .nemo-window toolbar.primary-toolbar .path-bar button:backdrop:disabled {
       color: rgba(216, 222, 233, 0.2);
       background-color: #16181d;
       text-shadow: none;
@@ -6124,6 +6122,8 @@ ConversationListView {
 .nemo-window .nemo-inactive-pane .view:not(:selected), .nemo-window .nemo-inactive-pane iconview:not(:selected),
 .nemo-window .nemo-inactive-pane iconview {
   background-color: #16181d; }
+.nemo-window grid > paned > separator {
+  background-image: image(#16181d); }
 
 /* thunar */
 .thunar toolbar {
@@ -6208,7 +6208,6 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   .caja-navigation-window paned button.image-button,
   .caja-navigation-window paned .caja-pathbar button {
     color: #d8dee9;
-    border-radius: 6px;
     text-shadow: none;
     box-shadow: none;
     border: 1px solid #0b0c0f;
