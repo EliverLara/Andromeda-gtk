@@ -40,11 +40,11 @@
     toolbar.primary-toolbar {
         margin-bottom: -1px;
         background: $headerbar_color;
-        button {
+        .path-bar button {
             @include button(normal-header);
             min-height: 24px;
             padding: 3px;
-            &:hover { @include button(hover-header, $selected_bg_color, $selected_fg_color); }
+            &:hover { @include button(hover-header, lighten($headerbar_color, 12%), $selected_fg_color); }
 
             &:selected,
             &:active,
@@ -57,6 +57,8 @@
             &:backdrop:disabled {
                 @include button(backdrop-header, $main_dark_color, transparentize($headerbar_fg_color, 0.8));
             }
+
+            margin-right: -1px;
         }
     }
 
@@ -64,5 +66,7 @@
     .nemo-inactive-pane iconview {
         background-color: darken($base_color, 6%); 
     }
+
+    grid > paned > separator { background-image: image($_sidebar_color); }
     
 }
