@@ -1,7 +1,7 @@
 /************
  * Pathbars *
  ************/
-.path-bar button {
+ .path-bar button {
   &.text-button, &.image-button, & {
     padding-left: 4px;
     padding-right: 4px;
@@ -46,7 +46,7 @@
       border-right: 1px solid $borders_color;
     }
     &:hover, &:focus {
-      .dim-label {@include button(active-header); }
+      .dim-label { background-color: lighten($headerbar_color, 12%); }
     }
   }
   
@@ -55,6 +55,7 @@
     padding: 3px 0px 3px 12px; 
     border-right: none;
     margin-right: -6px;
+    border-radius: 6px 0px 0px 6px;
   }
 
   // Reset path buttons appearance
@@ -74,8 +75,13 @@
     }
 
     image { 
-      background-color: lighten($headerbar_color, 12%);
-      box-shadow: 0px -2px inset #882ae9;
+      background:
+      linear-gradient(to  right, #882ae9, #882ae9)
+      left 
+      bottom
+      lighten($headerbar_color, 12%)
+      no-repeat; 
+      background-size: 100% 1.5px;
     }
   }
 
