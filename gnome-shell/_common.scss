@@ -2312,7 +2312,7 @@ $base_padding: 6px;
   //.quick-toggle-icon, .quick-toggle-arrow { icon-size: $base_icon_size; }
 }
 
-.quick-menu-toggle {
+.quick-menu-toggle, .quick-toggle-has-menu {
   &:ltr > StBoxLayout { padding-right: 0; }
   &:rtl > StBoxLayout { padding-left: 0; }
 
@@ -2328,15 +2328,15 @@ $base_padding: 6px;
   }
 
 
-  & .quick-toggle-arrow {
-    background-color: transparentize(lighten($bg_color, 4%), 0.3);
+  & .quick-toggle-arrow, & .quick-toggle-menu-button {
+    background-color: lighten($bg_color, 6%);
     padding: $base_padding $base_padding*1.75;
     border-width: 0;
     &:checked { 
-      @include button(active, lighten($base_color, 10%));
-      &:hover { @include button(active, lighten($bg_color, 15%)); }
+      @include button(active, lighten($bg_color, 16%));
+      &:hover { @include button(active, lighten($bg_color, 18%)); }
     }
-    &:hover { @include button(active, lighten($bg_color, 7%)); }
+    &:hover { @include button(active, lighten($bg_color, 8%)); }
     &:checked, &:hover, &:checked:hover {
       color: $selected_fg_color;
       border-width: 0;
@@ -2345,6 +2345,8 @@ $base_padding: 6px;
     &:ltr { border-radius: 0 99px 99px 0; }
     &:rtl { border-radius: 99px 0 0 99px; }
   }
+
+  & .quick-toggle-separator { width: 0px; }
 }
 
 .quick-toggle-menu {
