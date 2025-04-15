@@ -1592,17 +1592,8 @@ messagedialog, .messagedialog, .dialog {
     color: #d8dee9;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px; }
-  messagedialog.csd .dialog-action-area button, messagedialog.csd .response-area button, .messagedialog.csd .dialog-action-area button, .messagedialog.csd .response-area button, .dialog.csd .dialog-action-area button, .dialog.csd .response-area button {
-    padding: 7px 11px;
-    border-radius: 0;
-    color: #d8dee9;
-    box-shadow: none;
-    border: none; }
-    messagedialog.csd .dialog-action-area button:not(.destructive-action):hover, messagedialog.csd .response-area button:not(.destructive-action):hover, .messagedialog.csd .dialog-action-area button:not(.destructive-action):hover, .messagedialog.csd .response-area button:not(.destructive-action):hover, .dialog.csd .dialog-action-area button:not(.destructive-action):hover, .dialog.csd .response-area button:not(.destructive-action):hover {
-      background-color: #007DB8;
-      color: #fff; }
 
-.messagedialog .message-area {
+.messagedialog .message-area, .messagedialog .response-area, .dialog .dialog-action-area {
   padding: 26px; }
 
 filechooser .dialog-action-box {
