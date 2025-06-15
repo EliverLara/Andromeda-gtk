@@ -11,7 +11,7 @@ $_dot_color: if($variant=='light', $selected_bg_color,
 
 %button,
 button {
-  @at-root %button_basic, &:not(.accent-button) {
+  @at-root %button_basic, & {
     min-height: 22px;
     min-width: 16px;
     padding: 4px 6px;
@@ -548,5 +548,17 @@ notebook, list, .view, popover {
   }
   .linked > button {
     box-shadow: none;
+  }
+}
+
+// Gnome 48 toggle groups (screens config)
+toggle-group{
+  padding: 3px;
+  toggle{
+    &:checked { 
+      background-color: lighten($base_color, 20%); 
+      &, label { color: $selected_fg_color; }
+    }
+    padding: 0 4px;
   }
 }
