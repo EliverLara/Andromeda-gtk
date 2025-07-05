@@ -6165,8 +6165,7 @@ window.thunar toolbar#location-toolbar > toolitem > widget > widget.linked.path-
   .thunar scrolledwindow.sidebar treeview.view:hover, .thunar scrolledwindow.sidebar treeview.view:selected {
     background: #252932;
     color: #fff;
-    border-radius: 0;
-    box-shadow: 4px 0px 0px 0px #1FB8FF inset; }
+    border-radius: 0; }
 
 .thunar paned separator {
   background: image(#16181d); }
