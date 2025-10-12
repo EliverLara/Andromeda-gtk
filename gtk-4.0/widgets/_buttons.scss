@@ -227,7 +227,10 @@ button {
 
       &:hover,
       &:active,
-      &:checked { @include button(hover, lighten($b_color, 4%), white); }
+      &:checked { 
+        @include button(hover, lighten($b_color, 4%), white); 
+        opacity: 0.9;
+      }
 
       &:backdrop,
       &.flat:backdrop {
@@ -255,7 +258,7 @@ button {
 
       &:disabled {
         @include button(insensitive, $b_color, white);
-
+        opacity: 0.7;
         &:active,
         &:checked { @include button(insensitive-active, $b_color, white); }
       }
