@@ -2548,7 +2548,7 @@ GraniteWidgetsWelcome {
       padding: 3px 12px; }
     .titlebar .path-buttons-box .current-dir image,
     headerbar .path-buttons-box .current-dir image {
-      background: linear-gradient(to right, #882ae9) left bottom #2c2e39 no-repeat;
+      background: #882ae9 left bottom #2c2e39 no-repeat;
       background-size: 100% 1.5px; }
     .titlebar .path-buttons-box button.current-dir:only-child image,
     headerbar .path-buttons-box button.current-dir:only-child image {
