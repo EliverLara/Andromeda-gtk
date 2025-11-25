@@ -5677,7 +5677,8 @@ agenda-view list.background:backdrop,
 .calendar-list:backdrop {
   background-color: #16181d; }
 
-popover datechooser {
+popover datechooser,
+popover .calendars-list {
   background-color: transparent; }
 
 /******************************
