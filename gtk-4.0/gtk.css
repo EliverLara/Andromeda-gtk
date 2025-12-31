@@ -308,18 +308,22 @@ headerbar .subtitle {
   opacity: 0.55;
   text-shadow: none; }
 
-assistant .sidebar {
-  background-color: #23262E;
+window.assistant .sidebar {
+  background-color: #1f2229;
   border-top: 1px solid #0b0c0f; }
-  assistant .sidebar:backdrop {
+  window.assistant .sidebar:backdrop {
     background-color: #252831;
     border-color: #0d0e11; }
-assistant.csd .sidebar {
+window.assistant.csd .sidebar {
   border-top-style: none; }
-assistant .sidebar label {
+window.assistant .sidebar label {
   padding: 6px 12px; }
-assistant .sidebar label.highlight {
-  background-color: #40444b; }
+window.assistant .sidebar label.highlight {
+  background-color: #007DB8;
+  color: #fff; }
+
+window.aboutdialog image.large-icons {
+  -gtk-icon-size: 128px; }
 
 .app-notification,
 .app-notification.frame, .osd .scale-popup, .osd popover.background > arrow,
