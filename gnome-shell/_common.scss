@@ -705,7 +705,7 @@ $slider_size: 15px;
 
   .switcher-list .item-box {
     padding: 8px;
-    border-radius: 10px;
+    border-radius: 16px;
     background-color: transparent;
   }
 
@@ -715,7 +715,7 @@ $slider_size: 15px;
   }
 
   .switcher-list .item-box:selected {
-    background-color: darken($selected_bg_color, 15%);
+    background-color: $selected_bg_color;
     color: $selected_fg_color;
   }
 
